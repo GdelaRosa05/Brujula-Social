@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+:root{
+    --black: black;
+    --subtitle: rgb(100, 100, 100);
+}
+
+header{
+    width: 1200px;
+    height: 90px;
+    display: flex;
+    position: fixed;
+}
+
+.logo-box{
+    height: 100%;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-box img{
+    width: 60px;
+    height: 60px;
+}
+
+nav{
+    height: 100%;
+    flex: 1;
+}
+
+nav ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    margin: 18px;
+}
+
+.header-btn{
+    width: 200px;
+    height: 100%;
+}
+
+.inicio{
+    width: 1200px;
+    height: 100vh;
+    display: flex;
+}
+
+.inicio-box1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bienvenido{
+    background-color: rgb(190, 255, 190);
+    width: fit-content;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.inicio-box1 h1{
+    font-size: 65px;
+    font-weight: bold;
+    width: 400px;
+}
+
+.inicio-box1 .inicio-sub{
+    color: var(--subtitle);
+    margin-top: 30px;
+    width: 400px;
+}
+
+.inicio-box2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio-box2 img{
+    width: 550px;
+    height: 550px;
+}
+
+.historia{
+    width: 60%;
+    height: 100vh;
+    background-color: red;
+}
+
+/** PANTALLAS GRANDES **/
+@media screen and (min-width: 1401px) {
+    
+}
+
+/** PORTÁTIL **/
+@media screen and (min-width: 1024px) and (max-width: 1400px){
+    
+}
+
+/** TABLETS **/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+
+/** PORTÁTILES **/
+@media screen and (min-width: 1024px) and (max-width: 1300px){
+    header{
+        width: 90%;
+        height: 90px;
+        display: flex;
+        position: fixed;
+    }
+
+    .inicio{
+        width: 90%;
+        height: 100vh;
+        display: flex;
+    }
+
+    .bienvenido{
+        background-color: rgb(190, 255, 190);
+        width: fit-content;
+        color: black;
+        font-weight: bold;
+        font-size: clamp(10px, 2vw, 14px);
+        padding: 5px 10px 5px 10px;
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+
+    .inicio-box1 h1{
+        font-size: clamp(40px, 5vw, 65px);
+        font-weight: bold;
+        width: 90%;
+    }
+
+    .inicio-box1 .inicio-sub{
+        font-size: clamp(10px, 2vw, 16px);
+        color: var(--subtitle);
+        margin-top: 30px;
+        width: 90%;
+    }
+
+    .inicio-box2{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .inicio-box2 img{
+        width: 90%;
+        height: auto;
+    }
+}
