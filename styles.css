@@ -131,12 +131,57 @@ nav ul a{
 }
 
 /** TABLETS **/
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    header{
+        width: 90%;
+        height: 90px;
+        display: flex;
+        position: fixed;
+    }
 
+    .inicio{
+        width: 90%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        margin-top: 120px;
+    }
+
+    .inicio-box1{
+        width: 40%;
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .inicio-box1 h1{
+        font-size: clamp(40px, 5vw, 65px);
+        font-weight: bold;
+        width: 90%;
+    }
+
+    .inicio-box1 .inicio-sub{
+        font-size: clamp(10px, 2vw, 14px);
+        color: var(--subtitle);
+        margin-top: 30px;
+        width: 90%;
+    }
+
+    .inicio-box2{
+        width: 60%;
+        height: 35%;
+        display: flex;
+    }
+
+    .inicio-box2 img{
+        width: 100%;
+        height: auto;
+    }
 }
 
 /** PORTÁTILES **/
-@media screen and (min-width: 1024px) and (max-width: 1300px){
+@media screen and (min-width: 1025px) and (max-width: 1300px){
     header{
         width: 90%;
         height: 90px;
@@ -149,6 +194,7 @@ nav ul a{
         height: 100vh;
         display: flex;
     }
+    
 
     .bienvenido{
         background-color: rgb(190, 255, 190);
@@ -168,7 +214,7 @@ nav ul a{
     }
 
     .inicio-box1 .inicio-sub{
-        font-size: clamp(10px, 2vw, 16px);
+        font-size: clamp(12px, 2vw, 15px);
         color: var(--subtitle);
         margin-top: 30px;
         width: 90%;
