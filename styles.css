@@ -28,7 +28,6 @@ header{
     display: flex;
     position: fixed;
     background-color: white;
-    scroll-behavior: smooth;
 }
 
 .logo-box{
@@ -266,10 +265,13 @@ nav ul a{
 
 .historia-title h1{
     font-size: 60px;
+    font-weight: bold;
 }
 
 .highlight{
     background-color: rgb(190, 255, 190);
+    font-weight: bold;
+    font-style: italic;
 }
 
 .historia-content{
@@ -292,6 +294,88 @@ nav ul a{
     backdrop-filter: blur(10px); /* Intensidad del blur */
     -webkit-backdrop-filter: blur(10px); /* Para compatibilidad con Safari */
     border-radius: 0 0 20px 20px;
+}
+
+.equipo{
+    width: 1200px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.equipo-box1{
+    width: 100%;
+    height: fit-content;
+}
+
+.equipo-box1 h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.equipo-box1 a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.equipo-link{
+    color: rgb(190, 255, 190);
+}
+
+.equipo-box2{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin-top: 30px;
+}
+
+.integrante{
+    width: 30%;
+    height: 400px;
+    margin: 30px 15px 30px 15px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 10px 28px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 28px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 28px -10px rgba(0,0,0,0.75);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+}
+
+.int1{
+    background-image: url(img/int1.jpg);
+}
+
+.int2{
+    background-image: url(img/int2.jpg);
+}
+
+.int3{
+    background-image: url(img/int3.jpg);
+}
+
+.int-description{
+    width: 100%;
+    height: fit-content;
+    padding: 25px 18px;
+    background-color: rgba(255, 255, 255, 0.3); /* Color con transparencia */
+    backdrop-filter: blur(10px); /* Intensidad del blur */
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidad con Safari */
+    border-radius: 0 0 15px 15px;
+}
+
+.int-name{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.int-puesto{
+    color: rgb(22, 22, 22);
+    font-size: 14px;
 }
 
 /** MÓVILES **/
