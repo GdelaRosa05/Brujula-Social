@@ -18,6 +18,7 @@ body{
 :root{
     --black: black;
     --subtitle: rgb(100, 100, 100);
+    --hover-color: rgb(240, 240, 240);
 }
 
 header{
@@ -25,6 +26,7 @@ header{
     height: 90px;
     display: flex;
     position: fixed;
+    background-color: white;
 }
 
 .logo-box{
@@ -114,20 +116,126 @@ nav ul a{
     height: 550px;
 }
 
-.historia{
-    width: 60%;
+.inicio2{
+    width: 1200px;
     height: 100vh;
-    background-color: red;
+    display: flex;
 }
 
-/** PANTALLAS GRANDES **/
-@media screen and (min-width: 1401px) {
-    
+.inicio2-box1{
+    width: 50%;
+    height: 100%;
 }
 
-/** PORTÁTIL **/
-@media screen and (min-width: 1024px) and (max-width: 1400px){
-    
+.inicio2-box2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    width: 400px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 28px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 28px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 28px -10px rgba(0,0,0,0.75);
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.2s;
+    border: 2px solid var(--hover-color);
+    border-radius: 10px;
+}
+
+.menu-item:hover{
+    background-color: var(--hover-color);
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.submenu {
+    display: block; /* Cambié el display a block para que la animación funcione correctamente */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    padding-left: 20px;
+}
+
+.submenu p {
+    padding: 8px 0;
+    text-decoration: none;
+    color: var(--subtitle);
+}
+.icon {
+    font-size: 18px;
+}
+
+/** MÓVILES **/
+@media screen and (min-width: 100px) and (max-width: 767px){
+    header{
+        display: none;
+    }
+
+    .inicio{
+        width: 90%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .inicio-box1{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .bienvenido{
+        background-color: rgb(190, 255, 190);
+        width: fit-content;
+        color: black;
+        font-weight: bold;
+        font-size: clamp(12px, 2vw, 14px);
+        padding: 5px 10px 5px 10px;
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+
+    .inicio-box1 h1{
+        font-size: clamp(60px, 5vw, 65px);
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .inicio-box1 .inicio-sub{
+        color: var(--subtitle);
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .inicio-box2{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inicio-box2 img{
+        width: 120%;
+        height: auto;
+    }
 }
 
 /** TABLETS **/
